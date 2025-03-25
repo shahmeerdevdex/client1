@@ -1,0 +1,16 @@
+
+.section-container {
+  @apply container px-4 sm:px-6 lg:px-8 mx-auto max-w-7xl;
+}
+
+.section-heading {
+  @apply text-3xl md:text-4xl font-display font-bold text-kalibre-950 mb-6;
+}
+
+.section-subheading {
+  @apply text-lg text-kalibre-600 max-w-3xl mb-10;
+}
+
+.glassmorphism-card {
+  @apply bg-white/80 backdrop-blur-sm border border-kalibre-100/30 shadow-sm hover:shadow-md transition-all duration-300;
+}
