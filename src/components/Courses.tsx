@@ -121,7 +121,7 @@ const Courses = () => {
       <div className="section-container" ref={sectionRef}>
         <div className="text-center mb-12">
           <div className="reveal opacity-0">
-            <span className="inline-block px-3 py-1 mb-4 text-xs font-medium rounded-full bg-kalibre-100 text-kalibre-800 uppercase tracking-wide">
+            <span className="inline-block px-3 py-1 mb-4 text-xs font-medium rounded-full bg-kaliber-100 text-kaliber-800 uppercase tracking-wide">
               Our Programs
             </span>
             <h2 className="section-heading">
@@ -148,44 +148,44 @@ const Courses = () => {
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 xl:basis-1/3">
                   <div className="p-1 h-full">
                     <div className="glassmorphism-card rounded-xl overflow-hidden transition-all duration-300 h-full flex flex-col hover:shadow-lg hover:translate-y-[-8px]">
-                      <AspectRatio ratio={16/9} className="bg-kalibre-100 overflow-hidden">
+                      <AspectRatio ratio={16/9} className="bg-kaliber-100 overflow-hidden">
                         <img 
                           src={course.image} 
                           alt={course.title} 
                           className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
                         />
                       </AspectRatio>
-                      <div className="h-2 bg-kalibre-700"></div>
+                      <div className="h-2 bg-kaliber-700"></div>
                       <div className="p-6 flex flex-col flex-grow">
                         <div className="flex justify-between items-start mb-4">
                           <div>
-                            <h3 className="text-xl font-semibold text-kalibre-900">{course.title}</h3>
+                            <h3 className="text-xl font-semibold text-kaliber-900">{course.title}</h3>
                             <div className="flex items-center mt-2">
-                              <span className="bg-kalibre-100 text-kalibre-800 text-xs px-2 py-1 rounded font-medium flex items-center">
+                              <span className="bg-kaliber-100 text-kaliber-800 text-xs px-2 py-1 rounded font-medium flex items-center">
                                 <Award size={14} className="mr-1" />
                                 {course.level}
                               </span>
-                              <span className="bg-kalibre-50 text-kalibre-700 text-xs px-2 py-1 rounded font-medium ml-2 flex items-center">
+                              <span className="bg-kaliber-50 text-kaliber-700 text-xs px-2 py-1 rounded font-medium ml-2 flex items-center">
                                 <Clock size={14} className="mr-1" />
                                 {course.duration}
                               </span>
                             </div>
                           </div>
-                          <div className="w-12 h-12 rounded-full bg-kalibre-100 flex items-center justify-center">
-                            <GraduationCap size={20} className="text-kalibre-800" />
+                          <div className="w-12 h-12 rounded-full bg-kaliber-100 flex items-center justify-center">
+                            <GraduationCap size={20} className="text-kaliber-800" />
                           </div>
                         </div>
                         
-                        <p className="text-kalibre-600 text-sm mb-4">
+                        <p className="text-kaliber-600 text-sm mb-4">
                           {course.description}
                         </p>
                         
                         <div className="mb-6 flex-grow">
-                          <h4 className="text-sm font-medium text-kalibre-800 mb-2">Highlights:</h4>
-                          <ul className="text-sm text-kalibre-600">
+                          <h4 className="text-sm font-medium text-kaliber-800 mb-2">Highlights:</h4>
+                          <ul className="text-sm text-kaliber-600">
                             {course.highlights.map((highlight, i) => (
                               <li key={i} className="flex items-center mb-1">
-                                <span className="w-1.5 h-1.5 bg-kalibre-400 rounded-full mr-2"></span>
+                                <span className="w-1.5 h-1.5 bg-kaliber-400 rounded-full mr-2"></span>
                                 {highlight}
                               </li>
                             ))}
@@ -194,7 +194,7 @@ const Courses = () => {
                         
                         <a 
                           href="#apply" 
-                          className="inline-flex items-center text-kalibre-800 font-medium hover:text-kalibre-600 transition-all-200 text-sm group mt-auto"
+                          className="inline-flex items-center text-kaliber-800 font-medium hover:text-kaliber-600 transition-all-200 text-sm group mt-auto"
                         >
                           Learn more
                           <ExternalLink size={14} className="ml-1 transform group-hover:translate-x-1 transition-transform" />
@@ -225,7 +225,7 @@ const Courses = () => {
         <div className="reveal opacity-0 mt-8 text-center">
           <a 
             href="#apply" 
-            className="inline-block bg-kalibre-800 text-white px-6 py-3 rounded-md font-medium hover:bg-kalibre-700 transition-all-200 transform hover:scale-105"
+            className="inline-block bg-kaliber-800 text-white px-6 py-3 rounded-md font-medium hover:bg-kaliber-700 transition-all-200 transform hover:scale-105"
           >
             Apply for a Course
           </a>
