@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from "react";
 import { GraduationCap, Clock, Award, ExternalLink } from "lucide-react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -37,7 +36,7 @@ const Courses = () => {
       title: "Diploma in Hospitality Management",
       level: "Level 4",
       duration: "12 months",
-      image: "https://images.unsplash.com/photo-1620503374956-c942862f0372?ixlib=rb-4.0.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      image: "https://res.cloudinary.com/dzwdsxj7s/image/upload/v1743260831/kaliber/vjuyrh3qs0d9qxfd9cqm.jpg",
       description: "A comprehensive program covering all aspects of hospitality management, including rooms division, food and beverage, and event management.",
       highlights: ["International qualification", "Full-time or part-time options", "Practical training included"]
     },
@@ -45,7 +44,7 @@ const Courses = () => {
       title: "Certificate in Culinary Arts",
       level: "Level 3",
       duration: "6 months",
-      image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      image: "https://res.cloudinary.com/dzwdsxj7s/image/upload/v1743260832/kaliber/q4zwboo2mpc8kynyejgd.jpg",
       description: "Develop professional culinary skills with this hands-on program covering kitchen operations, food preparation, and culinary techniques.",
       highlights: ["Taught by professional chefs", "State-of-the-art kitchen facilities", "Portfolio development"]
     },
@@ -53,7 +52,7 @@ const Courses = () => {
       title: "Advanced Diploma in Hospitality & Tourism",
       level: "Level 5",
       duration: "18 months",
-      image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      image: "https://res.cloudinary.com/dzwdsxj7s/image/upload/v1743260832/kaliber/qjqpooouphw7p2vzmz02.jpg",
       description: "An advanced program for aspiring managers in the hospitality and tourism sectors, with specialized modules in management and strategy.",
       highlights: ["Higher level qualification", "Management focus", "Industry placement"]
     }
@@ -77,18 +76,18 @@ const Courses = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-6">
           {courses.map((course, index) => (
             <div 
               key={index} 
               className="reveal opacity-0 glassmorphism-card rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:translate-y-[-8px]"
               style={{ transitionDelay: `${0.1 + index * 0.1}s` }}
             >
-              <AspectRatio ratio={16/9} className="bg-kalibre-100 overflow-hidden">
+              <AspectRatio ratio={16/9} className="bg-kalibre-100 overflow-hidden max-w-[500px] mx-auto">
                 <img 
                   src={course.image} 
                   alt={course.title} 
-                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                  className="w-full h-full object-contain transition-transform duration-700 hover:scale-110"
                 />
               </AspectRatio>
               <div className="h-2 bg-kalibre-700"></div>

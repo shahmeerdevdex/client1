@@ -1,4 +1,3 @@
-
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -50,11 +49,11 @@ const Hero = () => {
           
           <div className="hidden md:block animate-fade-up" style={{ animationDelay: "0.5s" }}>
             <div className="relative p-2 bg-white/50 backdrop-blur-sm rounded-2xl shadow-lg transform hover:rotate-1 transition-all duration-500">
-              <AspectRatio ratio={4/3} className="rounded-xl overflow-hidden">
+              <AspectRatio ratio={16/9} className="rounded-xl overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" 
+                  src="https://res.cloudinary.com/dzwdsxj7s/image/upload/v1743260832/kaliber/vncfmllj5gtdos1ezcfy.jpg" 
                   alt="Student learning hospitality" 
-                  className="object-cover w-full h-full"
+                  className="object-containx w-full h-full"
                 />
               </AspectRatio>
               <div className="absolute -bottom-5 -right-5 p-4 bg-white rounded-xl shadow-md">
