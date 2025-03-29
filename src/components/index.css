@@ -4,13 +4,13 @@
 }
 
 .section-heading {
-  @apply text-3xl md:text-4xl font-display font-bold text-kalibre-950 mb-6;
+  @apply text-3xl md:text-4xl font-display font-bold text-ocean-500 mb-6;
 }
 
 .section-subheading {
-  @apply text-lg text-kalibre-600 max-w-3xl mb-10;
+  @apply text-lg font-display text-ocean-600 max-w-3xl mb-10;
 }
 
 .glassmorphism-card {
-  @apply bg-white/80 backdrop-blur-sm border border-kalibre-100/30 shadow-sm hover:shadow-md transition-all duration-300;
+  @apply bg-white/80 backdrop-blur-sm border border-ocean-100/30 shadow-sm hover:shadow-md transition-all duration-300;
 }

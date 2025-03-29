@@ -80,7 +80,7 @@ const About = () => {
               <div className="absolute -top-4 -left-4 w-full h-full rounded-xl bg-kalibre-200 -z-10"></div>
               <div className="glassmorphism-card rounded-xl overflow-hidden transform hover:rotate-2 transition-all duration-500">
                 <div className="w-full overflow-hidden">
-                  <AspectRatio ratio={4/3}>
+                <AspectRatio ratio={4/3}>
                     <img 
                       src="https://res.cloudinary.com/dzwdsxj7s/image/upload/v1743260832/kaliber/jcbcy5rjrrmeclf5uqmi.jpg" 
                       alt="Hospitality students in classroom" 
@@ -90,7 +90,7 @@ const About = () => {
                 </div>
                 <div className="p-6">
                   <div className="flex items-center mb-4">
-                    <img 
+                  <img 
                       src="/public/only_logo.png" 
                       alt="CTH Logo" 
                       className="h-12 mr-4"

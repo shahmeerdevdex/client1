@@ -16,24 +16,24 @@
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 18%;
 
-    --primary: 215 30% 26%;
+    --primary: 200 55% 35%;   /* #26678D */
     --primary-foreground: 210 33% 99%;
 
     --secondary: 210 20% 96%;
-    --secondary-foreground: 215 25% 24%;
+    --secondary-foreground: 200 55% 35%;
 
     --muted: 210 20% 96%;
     --muted-foreground: 215 15% 53%;
 
-    --accent: 215 30% 94%;
-    --accent-foreground: 215 25% 24%;
+    --accent: 200 55% 95%;    /* Lighter shade of #26678D */
+    --accent-foreground: 200 55% 25%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 33% 99%;
 
-    --border: 214 20% 91%;
-    --input: 214 20% 91%;
-    --ring: 215 30% 70%;
+    --border: 200 30% 91%;
+    --input: 200 30% 91%;
+    --ring: 200 55% 70%;
 
     --radius: 0.5rem;
 
@@ -57,8 +57,8 @@
     --popover: 215 30% 12%;
     --popover-foreground: 210 33% 99%;
 
-    --primary: 210 33% 89%;
-    --primary-foreground: 215 30% 18%;
+    --primary: 200 55% 40%;    /* Dark mode #26678D */
+    --primary-foreground: 210 33% 99%;
 
     --secondary: 215 30% 18%;
     --secondary-foreground: 210 33% 99%;
@@ -66,7 +66,7 @@
     --muted: 215 30% 18%;
     --muted-foreground: 215 15% 70%;
 
-    --accent: 215 30% 16%;
+    --accent: 200 40% 20%;    /* Dark accent based on #26678D */
     --accent-foreground: 210 33% 99%;
 
     --destructive: 0 63% 50%;
@@ -74,7 +74,7 @@
 
     --border: 215 30% 20%;
     --input: 215 30% 20%;
-    --ring: 215 30% 50%;
+    --ring: 200 55% 50%;
     
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -112,19 +112,19 @@
   }
 
   .glassmorphism {
-    @apply bg-white/70 dark:bg-kalibre-900/70 backdrop-blur-md border border-white/20 dark:border-kalibre-800/30 shadow-sm;
+    @apply bg-white/70 dark:bg-ocean-900/70 backdrop-blur-md border border-white/20 dark:border-ocean-800/30 shadow-sm;
   }
   
   .glassmorphism-card {
-    @apply bg-white/90 dark:bg-kalibre-900/80 backdrop-blur-lg border border-white/20 dark:border-kalibre-800/30 shadow-md;
+    @apply bg-white/90 dark:bg-ocean-900/80 backdrop-blur-lg border border-ocean-200/30 dark:border-ocean-700/20 shadow-md;
   }
 
   .section-heading {
-    @apply text-3xl md:text-4xl lg:text-5xl font-display font-bold leading-tight mb-3 tracking-tight text-kalibre-950;
+    @apply text-3xl md:text-4xl lg:text-5xl font-display font-bold leading-tight mb-3 tracking-tight text-ocean-500;
   }
 
   .section-subheading {
-    @apply text-base md:text-lg lg:text-xl text-kalibre-600 max-w-3xl mb-12;
+    @apply text-base md:text-lg lg:text-xl text-ocean-600 max-w-3xl mb-12;
   }
   
   /* Enhanced Hover Effects */
@@ -141,7 +141,7 @@
   }
   
   .hover-glow:hover {
-    box-shadow: 0 0 20px rgba(139, 165, 201, 0.3);
+    box-shadow: 0 0 20px rgba(38, 103, 141, 0.3);
   }
   
   /* Image Effects */
@@ -190,4 +190,3 @@
 .animate-float {
   animation: float 3s ease-in-out infinite;
 }
-

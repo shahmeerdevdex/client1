@@ -42,6 +42,19 @@ export default {
 					900: '#37404d',
 					950: '#21272f',
 				},
+				// New colors based on #26678D
+				ocean: {
+					50: '#e6f0f6',
+					100: '#cce2ee',
+					200: '#99c5dd',
+					300: '#66a8cc',
+					400: '#338bbb',
+					500: '#26678D', // Main color
+					600: '#1e5271',
+					700: '#174058',
+					800: '#0f2d3e',
+					900: '#081a24',
+				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
