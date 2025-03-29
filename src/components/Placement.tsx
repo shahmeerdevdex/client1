@@ -165,7 +165,7 @@ const Placement = () => {
     {
       icon: <MapPin size={24} className="text-ocean-500" />,
       region: "USA",
-      image: "https://res.cloudinary.com/dzwdsxj7s/image/upload/v1743277322/kaliber/kihy8rzgeb6vlvu5c9dj.jpg",
+      image: "https://res.cloudinary.com/dzwdsxj7s/image/upload/v1743277360/kaliber/osk14g6xtaai1kmi0fme.jpg",
       description: "Premium hotel chains in New York, Miami, Los Angeles and other major cities."
     },
     {
@@ -189,7 +189,7 @@ const Placement = () => {
     {
       icon: <MapPin size={24} className="text-ocean-500" />,
       region: "Malaysia",
-      image: "https://images.unsplash.com/photo-1596422846543-75c6fc197f11?ixlib=rb-4.0.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      image: "https://res.cloudinary.com/dzwdsxj7s/image/upload/v1743277869/kaliber/l7gtjd4dv11inslya3yb.jpg",
       description: "Leading hospitality venues across Kuala Lumpur and Malaysian tourist spots."
     },
     {
