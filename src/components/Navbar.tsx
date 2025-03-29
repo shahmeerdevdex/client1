@@ -41,10 +41,10 @@ const Navbar = () => {
       <div className="section-container">
         <nav className="flex items-center justify-between">
         <div className="flex items-center">
-            <a href="#" className="text-2xl font-display font-bold text-kaliber-950 flex items-center gap-2">
+            <a href="#" className="text-2xl font-display font-bold text-kalibre-950 flex items-center gap-2">
               <img 
                 src="https://res.cloudinary.com/dzwdsxj7s/image/upload/v1743275933/kaliber/hrj4dq4wlety7jh17epj.png" 
-                alt="The Kaliber Logo" 
+                alt="The Kalibre Logo" 
                 className="h-10 w-auto"
               />
 
@@ -57,14 +57,14 @@ const Navbar = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-kaliber-700 hover:text-kaliber-950 transition-all-200 text-sm font-medium"
+                className="text-kalibre-700 hover:text-kalibre-950 transition-all-200 text-sm font-medium"
               >
                 {link.label}
               </a>
             ))}
             <a
               href="#apply"
-              className="bg-kaliber-800 text-white px-5 py-2 rounded-md text-sm font-medium hover:bg-kaliber-700 transition-all-200"
+              className="bg-kalibre-800 text-white px-5 py-2 rounded-md text-sm font-medium hover:bg-kalibre-700 transition-all-200"
             >
               Apply Now
             </a>
@@ -72,7 +72,7 @@ const Navbar = () => {
 
           {/* Mobile Navigation Toggle */}
           <button
-            className="md:hidden text-kaliber-800 focus:outline-none"
+            className="md:hidden text-kalibre-800 focus:outline-none"
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
@@ -95,7 +95,7 @@ const Navbar = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-kaliber-800 text-lg font-medium"
+                className="text-kalibre-800 text-lg font-medium"
                 onClick={toggleMenu}
               >
                 {link.label}
@@ -103,7 +103,7 @@ const Navbar = () => {
             ))}
             <a
               href="#apply"
-              className="bg-kaliber-800 text-white px-6 py-3 rounded-md text-base font-medium w-full text-center"
+              className="bg-kalibre-800 text-white px-6 py-3 rounded-md text-base font-medium w-full text-center"
               onClick={toggleMenu}
             >
               Apply Now

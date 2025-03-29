@@ -5,7 +5,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Courses from "@/components/Courses";
 import Placement from "@/components/Placement";
-import JoinKaliber from "@/components/JoinKaliber";
+import JoinKalibre from "@/components/JoinKalibre";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
 
@@ -45,7 +45,7 @@ const Index = () => {
         <div className="py-2"></div>
         <Placement />
         <div className="py-2"></div>
-        <JoinKaliber />
+        <JoinKalibre />
         <div className="py-2"></div>
         <Testimonials />
       </main>
