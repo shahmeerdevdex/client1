@@ -218,7 +218,7 @@ const Placement = () => {
       position: "Front Office Manager, Marriott Hotels",
       image: "https://images.unsplash.com/photo-1620503374956-c942862f0372?ixlib=rb-4.0.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       location: "Dubai, UAE",
-      quote: "The Kalibre's CTH program opened doors for me internationally. Their placement support helped me secure a position at one of Dubai's finest hotels."
+      quote: "The Kaliber's CTH program opened doors for me internationally. Their placement support helped me secure a position at one of Dubai's finest hotels."
     },
     {
       name: "Hassan Khan",
@@ -232,7 +232,7 @@ const Placement = () => {
       position: "Events Coordinator, Hyatt Regency",
       image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       location: "Riyadh, Saudi Arabia",
-      quote: "From classroom to career, The Kalibre supported me at every step. Their industry connections helped me find my dream job."
+      quote: "From classroom to career, The Kaliber supported me at every step. Their industry connections helped me find my dream job."
     }
   ];
 

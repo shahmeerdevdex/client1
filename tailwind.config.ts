@@ -27,9 +27,9 @@ export default {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
-				background: 'hsl(var(--background))',ß
+				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
-				ßß: {
+				kalibre: {
 					50: '#f5f7fa',
 					100: '#e4e9f0',
 					200: '#d1dbe4',

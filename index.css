@@ -1,0 +1,192 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 33% 99%;
+    --foreground: 215 25% 18%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 18%;
+
+    --primary: 200 55% 35%;   /* #26678D */
+    --primary-foreground: 210 33% 99%;
+
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 200 55% 35%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 15% 53%;
+
+    --accent: 200 55% 95%;    /* Lighter shade of #26678D */
+    --accent-foreground: 200 55% 25%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 33% 99%;
+
+    --border: 200 30% 91%;
+    --input: 200 30% 91%;
+    --ring: 200 55% 70%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 215 30% 10%;
+    --foreground: 210 33% 99%;
+
+    --card: 215 30% 12%;
+    --card-foreground: 210 33% 99%;
+
+    --popover: 215 30% 12%;
+    --popover-foreground: 210 33% 99%;
+
+    --primary: 200 55% 40%;    /* Dark mode #26678D */
+    --primary-foreground: 210 33% 99%;
+
+    --secondary: 215 30% 18%;
+    --secondary-foreground: 210 33% 99%;
+
+    --muted: 215 30% 18%;
+    --muted-foreground: 215 15% 70%;
+
+    --accent: 200 40% 20%;    /* Dark accent based on #26678D */
+    --accent-foreground: 210 33% 99%;
+
+    --destructive: 0 63% 50%;
+    --destructive-foreground: 210 33% 99%;
+
+    --border: 215 30% 20%;
+    --input: 215 30% 20%;
+    --ring: 200 55% 50%;
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv11", "ss01";
+    overflow-x: hidden;
+  }
+
+  .blur-backdrop {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .transition-all-200 {
+    @apply transition-all duration-200 ease-in-out;
+  }
+
+  .glassmorphism {
+    @apply bg-white/70 dark:bg-ocean-900/70 backdrop-blur-md border border-white/20 dark:border-ocean-800/30 shadow-sm;
+  }
+  
+  .glassmorphism-card {
+    @apply bg-white/90 dark:bg-ocean-900/80 backdrop-blur-lg border border-ocean-200/30 dark:border-ocean-700/20 shadow-md;
+  }
+
+  .section-heading {
+    @apply text-3xl md:text-4xl lg:text-5xl font-display font-bold leading-tight mb-3 tracking-tight text-ocean-500;
+  }
+
+  .section-subheading {
+    @apply text-base md:text-lg lg:text-xl text-ocean-600 max-w-3xl mb-12;
+  }
+  
+  /* Enhanced Hover Effects */
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+  
+  .hover-expand {
+    @apply transition-all duration-300 hover:scale-105;
+  }
+  
+  .hover-glow {
+    @apply transition-all duration-300;
+  }
+  
+  .hover-glow:hover {
+    box-shadow: 0 0 20px rgba(38, 103, 141, 0.3);
+  }
+  
+  /* Image Effects */
+  .img-zoom-container {
+    @apply overflow-hidden;
+  }
+  
+  .img-zoom {
+    @apply transition-transform duration-700 hover:scale-110;
+  }
+  
+  /* Animation Delays */
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+  
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+  
+  .delay-400 {
+    animation-delay: 400ms;
+  }
+  
+  .delay-500 {
+    animation-delay: 500ms;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}

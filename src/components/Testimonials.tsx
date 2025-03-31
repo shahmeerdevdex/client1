@@ -57,7 +57,7 @@ const Testimonials = () => {
 
   const studentTestimonials = [
     {
-      quote: "Kalibre's CTH program gave me the skills and confidence to excel. I'm now a Front Office Manager at a luxury hotel in Dubai!",
+      quote: "Kaliber's CTH program gave me the skills and confidence to excel. I'm now a Front Office Manager at a luxury hotel in Dubai!",
       name: "Sarah K.",
       position: "Front Office Manager",
       location: "Dubai"
@@ -69,7 +69,7 @@ const Testimonials = () => {
       location: "London"
     },
     {
-      quote: "From a small village in Pakistan to working at the Burj Al Arab – Kalibre made my dreams possible!",
+      quote: "From a small village in Pakistan to working at the Burj Al Arab – Kaliber made my dreams possible!",
       name: "Ali R.",
       position: "Butler Service",
       location: "Dubai"
@@ -81,7 +81,7 @@ const Testimonials = () => {
       location: "Riyadh, Saudi Arabia"
     },
     {
-      quote: "Kalibre's connections got me interviews with top hotel chains. I had three job offers before graduation!",
+      quote: "Kaliber's connections got me interviews with top hotel chains. I had three job offers before graduation!",
       name: "David W.",
       position: "Revenue Analyst",
       location: "Marriott"
@@ -93,7 +93,7 @@ const Testimonials = () => {
       location: "Qatar"
     },
     {
-      quote: "I was hesitant about hospitality, but Kalibre's career guidance helped me find my passion in event management.",
+      quote: "I was hesitant about hospitality, but Kaliber's career guidance helped me find my passion in event management.",
       name: "Omar F.",
       position: "Event Coordinator",
       location: "Saudi Arabia"
@@ -108,27 +108,27 @@ const Testimonials = () => {
 
   const partnerTestimonials = [
     {
-      quote: "Kalibre graduates are our first choice. They arrive job-ready with the right skills and attitude.",
+      quote: "Kaliber graduates are our first choice. They arrive job-ready with the right skills and attitude.",
       name: "HR Director",
       company: "Hilton London Metropole"
     },
     {
-      quote: "We've recruited over 120 staff through Kalibre in the past 3 years. Their screening process is exceptional.",
+      quote: "We've recruited over 120 staff through Kaliber in the past 3 years. Their screening process is exceptional.",
       name: "General Manager",
       company: "InterContinental Dubai Festival City"
     },
     {
-      quote: "The quality of Kalibre's culinary students is outstanding. Many have become key members of our kitchen team.",
+      quote: "The quality of Kaliber's culinary students is outstanding. Many have become key members of our kitchen team.",
       name: "Executive Chef",
       company: "The Ritz-Carlton, Bahrain"
     },
     {
-      quote: "Our partnership with Kalibre solves our seasonal staffing challenges with well-trained professionals.",
+      quote: "Our partnership with Kaliber solves our seasonal staffing challenges with well-trained professionals.",
       name: "Operations Manager",
       company: "Swissôtel, Makkah Saudi Arabia"
     },
     {
-      quote: "Kalibre understands our specific needs. They've helped us build an entire front office team within weeks.",
+      quote: "Kaliber understands our specific needs. They've helped us build an entire front office team within weeks.",
       name: "Director of Rooms",
       company: "Jumeirah Emirates Towers"
     },
@@ -138,7 +138,7 @@ const Testimonials = () => {
       company: "Four Seasons Maldives"
     },
     {
-      quote: "We appreciate how Kalibre prepares students for the realities of hotel operations. Minimal training needed.",
+      quote: "We appreciate how Kaliber prepares students for the realities of hotel operations. Minimal training needed.",
       name: "VP of HR",
       company: "Rotana Hotels, Middle East"
     },
