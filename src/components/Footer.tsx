@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="col-span-1">
             <div className="mb-6">
               <a href="#" className="text-2xl font-display font-bold">
-                <span className="text-kalibre-300">The</span> Kaliber
+                <span className="text-kalibre-300">The</span> Kalibre
               </a>
             </div>
             <p className="text-kalibre-300 text-sm mb-6">
@@ -95,7 +95,7 @@ const Footer = () => {
             <div className="flex items-center mb-6">
               <Mail size={18} className="text-kalibre-400 mr-3 flex-shrink-0" />
               <a href="mailto:info@thekalibre.com" className="text-kalibre-300 hover:text-white transition-all-200 text-sm">
-                info@thekaliber.com
+                info@thekalibre.com
               </a>
             </div>
           </div>
@@ -218,7 +218,7 @@ const Footer = () => {
         
         <div className="pt-6 border-t border-kalibre-800 text-center">
           <p className="text-kalibre-400 text-sm">
-            © 2022 The Kaliber: operating under AAASK LTD, UK | Company Number: 14107209 All rights reserved. CTH Accredited Education Provider.
+            © 2022 The Kalibre: operating under AAASK LTD, UK | Company Number: 14107209 All rights reserved. CTH Accredited Education Provider.
           </p>
         </div>
       </div>

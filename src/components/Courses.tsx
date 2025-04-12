@@ -4,11 +4,14 @@ import { GraduationCap, Clock, Award, ExternalLink } from "lucide-react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Slider } from "@/components/ui/slider";
+import { Button } from "@/components/ui/button";
+import { useEnrollment } from "@/context/EnrollmentContext";
 
 const Courses = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [currentSlide, setCurrentSlide] = React.useState(0);
   const carouselApi = React.useRef<any>(null);
+  const { openForm } = useEnrollment();
   
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -192,13 +195,24 @@ const Courses = () => {
                           </ul>
                         </div>
                         
-                        <a 
-                          href="#apply" 
-                          className="inline-flex items-center text-kalibre-800 font-medium hover:text-kalibre-600 transition-all-200 text-sm group mt-auto"
-                        >
-                          Learn more
-                          <ExternalLink size={14} className="ml-1 transform group-hover:translate-x-1 transition-transform" />
-                        </a>
+                        <div className="flex items-center justify-between mt-auto">
+                          <a 
+                            href="#apply" 
+                            className="inline-flex items-center text-kalibre-800 font-medium hover:text-kalibre-600 transition-all-200 text-sm group"
+                          >
+                            Learn more
+                            <ExternalLink size={14} className="ml-1 transform group-hover:translate-x-1 transition-transform" />
+                          </a>
+                          
+                          <Button 
+                            variant="outline" 
+                            size="sm"
+                            className="text-kalibre-700 border-kalibre-300 hover:bg-kalibre-50"
+                            onClick={() => openForm(course.title)}
+                          >
+                            Enroll
+                          </Button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -223,12 +237,12 @@ const Courses = () => {
         </div>
 
         <div className="reveal opacity-0 mt-8 text-center">
-          <a 
-            href="#apply" 
-            className="inline-block bg-kalibre-800 text-white px-6 py-3 rounded-md font-medium hover:bg-kalibre-700 transition-all-200 transform hover:scale-105"
+          <Button 
+            className="bg-kalibre-800 text-white px-6 py-3 rounded-md font-medium hover:bg-kalibre-700 transition-all-200 transform hover:scale-105"
+            onClick={() => openForm(courses[currentSlide].title)}
           >
             Apply for a Course
-          </a>
+          </Button>
         </div>
       </div>
     </section>

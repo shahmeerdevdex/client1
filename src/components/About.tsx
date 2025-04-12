@@ -49,13 +49,13 @@ const About = () => {
           <div>
             <div className="reveal opacity-0">
               <span className="inline-block px-3 py-1 mb-4 text-xs font-medium rounded-full bg-kalibre-100 text-kalibre-800 uppercase tracking-wide">
-                About The Kaliber
+                About The Kalibre
               </span>
               <h2 className="section-heading">
                 Excellence in Hospitality Education
               </h2>
               <p className="text-kalibre-600 mb-8">
-                The Kaliber is a UK-based educational provider accredited by the prestigious CTH, 
+                The Kalibre is a UK-based educational provider accredited by the prestigious CTH, 
                 a leading UK governing body for the hospitality industry. We offer internationally 
                 recognized hospitality courses in Pakistan, providing students with the skills and 
                 knowledge needed to excel in the dynamic world of hospitality.
@@ -63,7 +63,7 @@ const About = () => {
             </div>
 
             <div className="reveal opacity-0" style={{ transitionDelay: "0.1s" }}>
-              <h3 className="text-xl font-semibold mb-4 text-kalibre-800">Why Choose The Kaliber?</h3>
+              <h3 className="text-xl font-semibold mb-4 text-kalibre-800">Why Choose The Kalibre?</h3>
               <ul className="space-y-3">
                 {features.map((feature, index) => (
                   <li key={index} className="flex items-start transform hover:translate-x-2 transition-all duration-300">
@@ -91,7 +91,7 @@ const About = () => {
                 <div className="p-6">
                   <div className="flex items-center mb-4">
                   <img 
-                      src="https://res.cloudinary.com/dzwdsxj7s/image/upload/v1743275920/kaliber/dno12ig2aunesardu97o.png" 
+                      src="/public/only_logo.png" 
                       alt="CTH Logo" 
                       className="h-12 mr-4"
                     />
