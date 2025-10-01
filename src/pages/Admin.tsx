@@ -1,13 +1,16 @@
 
 import React, { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import { Download, Calendar, Edit, Trash2, Plus, Search } from "lucide-react";
+import { Download, Calendar, Edit, Trash2, Plus, Search, BookOpen, FileText } from "lucide-react";
+import CourseManager from "@/components/CourseManager";
+import MOUManager from "@/components/MOUManager";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Calendar as CalendarComponent } from "@/components/ui/calendar";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { toast } from "sonner";
 import { format } from "date-fns";
 import { Navigate } from "react-router-dom";
@@ -35,6 +38,7 @@ const Admin = () => {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
   const [password, setPassword] = useState<string>("");
   const [loginError, setLoginError] = useState<string | null>(null);
+  const [activeTab, setActiveTab] = useState("enrollments");
   
   // Check if admin is logged in
   useEffect(() => {
@@ -257,19 +261,11 @@ const Admin = () => {
     <div className="container mx-auto p-6">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
         <div>
-          <h1 className="text-3xl font-bold">Course Enrollments</h1>
-          <p className="text-muted-foreground">Manage all student applications</p>
+          <h1 className="text-3xl font-bold">Admin Dashboard</h1>
+          <p className="text-muted-foreground">Manage your platform content and applications</p>
         </div>
         
         <div className="flex gap-2 self-end">
-          <Button 
-            variant="default"
-            onClick={exportToCSV}
-          >
-            <Download className="mr-2 h-4 w-4" />
-            Export to CSV
-          </Button>
-          
           <Button 
             variant="outline"
             onClick={handleLogout}
@@ -278,6 +274,38 @@ const Admin = () => {
           </Button>
         </div>
       </div>
+
+      <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
+        <TabsList className="grid w-full grid-cols-3">
+          <TabsTrigger value="enrollments" className="flex items-center gap-2">
+            <Search className="h-4 w-4" />
+            Enrollments
+          </TabsTrigger>
+          <TabsTrigger value="courses" className="flex items-center gap-2">
+            <BookOpen className="h-4 w-4" />
+            Courses
+          </TabsTrigger>
+          <TabsTrigger value="mous" className="flex items-center gap-2">
+            <FileText className="h-4 w-4" />
+            MOUs
+          </TabsTrigger>
+        </TabsList>
+
+        <TabsContent value="enrollments" className="space-y-6">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div>
+              <h2 className="text-2xl font-bold">Course Enrollments</h2>
+              <p className="text-muted-foreground">Manage all student applications</p>
+            </div>
+            
+            <Button 
+              variant="default"
+              onClick={exportToCSV}
+            >
+              <Download className="mr-2 h-4 w-4" />
+              Export to CSV
+            </Button>
+          </div>
       
       <div className="bg-white p-6 rounded-lg shadow mb-8">
         <div className="flex flex-col md:flex-row gap-4 mb-6">
@@ -409,7 +437,17 @@ const Admin = () => {
             </Table>
           </div>
         )}
-      </div>
+          </div>
+        </TabsContent>
+
+        <TabsContent value="courses">
+          <CourseManager />
+        </TabsContent>
+
+        <TabsContent value="mous">
+          <MOUManager />
+        </TabsContent>
+      </Tabs>
     </div>
   );
 };

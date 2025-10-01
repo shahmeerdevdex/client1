@@ -22,7 +22,7 @@ const EnrollmentForm = () => {
     <Sheet open={isFormOpen} onOpenChange={closeForm}>
       <SheetContent className="w-full md:max-w-md overflow-y-auto">
         <SheetHeader>
-          <SheetTitle className="text-2xl font-semibold text-kalibre-800">
+          <SheetTitle className="text-2xl font-semibold text-kaliber-800">
             Enroll in Course
           </SheetTitle>
           <SheetDescription>
@@ -35,7 +35,7 @@ const EnrollmentForm = () => {
             <input type="hidden" name="courseName" value={selectedCourse || ''} />
             
             <div className="space-y-2">
-              <Label htmlFor="name" className="text-kalibre-700">Full Name*</Label>
+              <Label htmlFor="name" className="text-kaliber-700">Full Name*</Label>
               <Input 
                 id="name" 
                 name="name" 
@@ -45,7 +45,7 @@ const EnrollmentForm = () => {
             </div>
             
             <div className="space-y-2">
-              <Label htmlFor="address" className="text-kalibre-700">Address*</Label>
+              <Label htmlFor="address" className="text-kaliber-700">Address*</Label>
               <Textarea 
                 id="address" 
                 name="address" 
@@ -55,7 +55,7 @@ const EnrollmentForm = () => {
             </div>
             
             <div className="space-y-2">
-              <Label htmlFor="dateOfBirth" className="text-kalibre-700">Date of Birth*</Label>
+              <Label htmlFor="dateOfBirth" className="text-kaliber-700">Date of Birth*</Label>
               <Input 
                 id="dateOfBirth" 
                 name="dateOfBirth" 
@@ -65,7 +65,7 @@ const EnrollmentForm = () => {
             </div>
             
             <div className="space-y-2">
-              <Label htmlFor="email" className="text-kalibre-700">Email*</Label>
+              <Label htmlFor="email" className="text-kaliber-700">Email*</Label>
               <Input 
                 id="email" 
                 name="email" 
@@ -76,7 +76,7 @@ const EnrollmentForm = () => {
             </div>
             
             <div className="space-y-2">
-              <Label htmlFor="mobile" className="text-kalibre-700">Mobile Number*</Label>
+              <Label htmlFor="mobile" className="text-kaliber-700">Mobile Number*</Label>
               <Input 
                 id="mobile" 
                 name="mobile" 
@@ -87,7 +87,7 @@ const EnrollmentForm = () => {
             </div>
             
             <div className="space-y-2">
-              <Label htmlFor="cv" className="text-kalibre-700">Upload CV (Optional)</Label>
+              <Label htmlFor="cv" className="text-kaliber-700">Upload CV (Optional)</Label>
               <Input 
                 id="cv" 
                 name="cv" 
@@ -104,7 +104,7 @@ const EnrollmentForm = () => {
               <Button 
                 type="submit" 
                 disabled={isSubmitting}
-                className="bg-kalibre-700 hover:bg-kalibre-800 text-white"
+                className="bg-kaliber-700 hover:bg-kaliber-800 text-white"
               >
                 {isSubmitting ? 'Submitting...' : 'Submit Application'}
               </Button>

@@ -30,7 +30,7 @@ const Hero = () => {
             </h2>
             
             <p className="animate-fade-up text-ocean-600 text-base max-w-xl mb-8" style={{ animationDelay: "0.3s" }}>
-              Welcome to Kalibre, a premier hospitality education and placement specialist, operating under UK-based AAASK LTD. We are dedicated to shaping the next generation of hospitality professionals by offering globally recognized CTH certifications, hands-on industry training, and direct job placements in top hotels worldwide.
+              Welcome to Kaliber, a premier hospitality education and placement specialist, operating under UK-based AAASK LTD. We are dedicated to shaping the next generation of hospitality professionals by offering globally recognized CTH certifications, hands-on industry training, and direct job placements in top hotels worldwide.
             </p>
             
             <div className="animate-fade-up flex flex-col sm:flex-row gap-4 w-full md:w-auto" style={{ animationDelay: "0.4s" }}>
@@ -68,7 +68,7 @@ const Hero = () => {
         </div>
 
         <div className="animate-fade-up mt-12 md:mt-16" style={{ animationDelay: "0.6s" }}>
-          <h3 className="text-xl font-display font-semibold text-ocean-800 mb-6 text-center">Why Kalibre Stands Out?</h3>
+          <h3 className="text-xl font-display font-semibold text-ocean-800 mb-6 text-center">Why Kaliber Stands Out?</h3>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6" style={{marginBottom:"5px"}}>
             <div className="glassmorphism-card rounded-xl p-6 hover:shadow-lg transition-all">

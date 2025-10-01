@@ -2,7 +2,7 @@
 import React from "react";
 import { CheckCircle, MapPin } from "lucide-react";
 
-const JoinKalibre = () => {
+const JoinKaliber = () => {
   return (
     <section className="py-24 bg-gradient-to-b from-white to-ocean-50">
       <div className="section-container">
@@ -11,7 +11,7 @@ const JoinKalibre = () => {
             Your Future In Hospitality
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold leading-tight mb-3 tracking-tight text-ocean-500">
-            Who Should Join Kalibre?
+            Who Should Join Kaliber?
           </h2>
         </div>
         
@@ -133,7 +133,7 @@ const JoinKalibre = () => {
         
         <div className="text-center mt-12">
           <h3 className="text-2xl font-display font-semibold text-ocean-800 mb-6">
-            Join Kalibre Today & Launch Your Hospitality Career!
+            Join Kaliber Today & Launch Your Hospitality Career!
           </h3>
           <div className="flex flex-wrap justify-center gap-6 mb-8">
             <div className="flex items-center">
@@ -175,4 +175,4 @@ const JoinKalibre = () => {
   );
 };
 
-export default JoinKalibre;
+export default JoinKaliber;

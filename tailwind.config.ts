@@ -29,7 +29,7 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
-				kalibre: {
+				kaliber: {
 					50: '#f5f7fa',
 					100: '#e4e9f0',
 					200: '#d1dbe4',
