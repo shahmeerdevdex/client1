@@ -91,7 +91,7 @@ const About = () => {
                 <div className="p-6">
                   <div className="flex items-center mb-4">
                   <img 
-                      src="/public/only_logo.png" 
+                      src="/only_logo.png" 
                       alt="CTH Logo" 
                       className="h-12 mr-4"
                     />

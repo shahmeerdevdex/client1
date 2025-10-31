@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Courses from "@/components/Courses";
+import Team from "@/components/Team";
 import MOUSection from "@/components/MOUSection";
 import Placement from "@/components/Placement";
 import JoinKaliber from "@/components/JoinKaliber";
@@ -42,6 +43,8 @@ const Index = () => {
         <About />
         <div className="py-2"></div>
         <Courses />
+        <div className="py-2"></div>
+        <Team />
         <div className="py-2"></div>
         <Placement />
         <div className="py-2"></div>
